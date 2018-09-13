@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>微金所</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -38,12 +39,12 @@
                     </div>
                     <div class="col-md-3 text-center">
                         <a href="#" class="btn btn-itcast btn-sm">免费注册</a>
-                        <a href="#" class="btn btn-link btn-sm">登录</a>
+                        <a href="#" class="btn btn-link btn-sm" data-toggle="modal" data-target=".modal">登录</a>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-itcast navbar-static-top">
+        <nav class="navbar navbar-itcast navbar-static-top" data-spy="affix" data-offset-top="60" data-offset-bottom="000">
             <div class="container">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
@@ -111,7 +112,7 @@
     <!-- /广告轮播 -->
 
     <!-- 特色介绍 -->
-    <section id="tese">
+    <section id="tese" class="hidden-xs">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-4">
@@ -196,22 +197,444 @@
       </div>
     </section>
     <!-- /特色介绍 -->
+
     <!-- 立即预约 -->
-    <section></section>
+    <section id="ljyy">
+      <div class="container">
+        <p class="pull-left"><i class="icon-uniE906"></i>现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？<a href="#">立即预约</a></p>
+        <p class="pull-right hidden-sm hidden-xs"><a href="#"><i class="icon-uniE905"></i> 微金所企业宣传片</a></p>
+      </div>
+    </section>
     <!-- /立即预约 -->
+
     <!-- 产品推荐 -->
-    <section></section>
+    <section id="products">
+      <div class="container">
+        <div class="ul-wrapper">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#category_01" aria-controls="category_01" role="tab" data-toggle="tab" aria-expanded="false">特别推荐</a></li>
+            <li role="presentation"><a href="#category_02" aria-controls="category_02" role="tab" data-toggle="tab" aria-expanded="true">微投资</a></li>
+            <li role="presentation"><a href="#category_03" aria-controls="category_03" role="tab" data-toggle="tab" aria-expanded="false">微小宝</a></li>
+            <li role="presentation"><a href="#category_04" aria-controls="category_04" role="tab" data-toggle="tab" aria-expanded="false">微消费</a></li>
+            <li role="presentation"><a href="#category_05" aria-controls="category_05" role="tab" data-toggle="tab" aria-expanded="false">微增利</a></li>
+            <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">微金宝</a></li>
+            <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">微转让</a></li>
+            <li class="pull-right hidden-sm hidden-xs"><a href="#">更多</a></li>
+          </ul>
+        </div>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active fade in" id="tab_01">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="panel panel-welkin actived">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                    <p><strong>8</strong><sub>%</sub></p>
+                    <p><span>年利率</span></p>
+                  </div>
+                  <div class="panel-body">
+                    <h5>新手体验标0650期</h5>
+                    <div class="row">
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="panel panel-welkin">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                    <p class="tooltips">
+                      <a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a>
+                      <a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实名认证" href="#">实</a>
+                    </p>
+                    <p><strong>8</strong><sub>%</sub></p>
+                    <p><span>年利率</span></p>
+                  </div>
+                  <div class="panel-body">
+                    <h5>新手体验标0650期</h5>
+                    <div class="row">
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="panel panel-welkin disabled">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                    <p class="tooltips">
+                      <a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a>
+                      <a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实名认证" href="#">实</a>
+                    </p>
+                    <p>
+                      <strong>8</strong>
+                      <sub>%</sub>
+                    </p>
+                    <p>
+                      <span>年利率</span>
+                    </p>
+                  </div>
+                  <div class="panel-body">
+                    <h5>新手体验标0650期</h5>
+                    <div class="row">
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="panel panel-welkin disabled">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                      <p class="tooltips">
+                        <a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a>
+                        <a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实名认证" href="#">实</a>
+                      </p>
+                      <p>
+                        <strong>8</strong>
+                        <sub>%</sub>
+                      </p>
+                      <p>
+                        <span>年利率</span>
+                      </p>
+                    </div>
+                  <div class="panel-body">
+                    <h5>新手体验标0650期</h5>
+                    <div class="row">
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="panel panel-welkin disabled">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                      <p class="tooltips">
+                        <a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a>
+                        <a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实名认证" href="#">实</a>
+                      </p>
+                      <p>
+                        <strong>8</strong>
+                        <sub>%</sub>
+                      </p>
+                      <p>
+                        <span>年利率</span>
+                      </p>
+                    </div>
+                  <div class="panel-body">
+                    <h5>新手体验标0650期</h5>
+                    <div class="row">
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="panel panel-welkin disabled">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                      <p class="tooltips">
+                        <a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a>
+                        <a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实名认证" href="#">实</a>
+                      </p>
+                      <p>
+                        <strong>8</strong>
+                        <sub>%</sub>
+                      </p>
+                      <p>
+                        <span>年利率</span>
+                      </p>
+                    </div>
+                  <div class="panel-body">
+                    <h5>新手体验标0650期</h5>
+                    <div class="row">
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-left">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p>起步价</p>
+                        <p><strong>1000.00</strong><sub>万</sub></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="tab_02">2</div>
+          <div role="tabpanel" class="tab-pane fade" id="tab_03">3</div>
+          <div role="tabpanel" class="tab-pane fade" id="tab_04">4</div>
+          <div role="tabpanel" class="tab-pane fade" id="tab_05">5</div>
+          <div role="tabpanel" class="tab-pane fade" id="tab_06">6</div>
+          <div role="tabpanel" class="tab-pane fade" id="tab_07">7</div>
+        </div>
+      
+      </div>
+    </section>
     <!-- /产品推荐 -->
+
     <!-- 新闻列表 -->
-    <section></section>
+    <section id="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-2">
+            <div class="news-title">
+              全部新闻
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation" class="active">
+                <a href="#news_1" aria-controls="news_1" role="tab" data-toggle="tab" data-title="全部新聞">
+                  <i class="icon-news01"></i>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#news_2" aria-controls="news_2" role="tab" data-toggle="tab" data-title="媒體報道">
+                  <i class="icon-news02"></i>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#news_3" aria-controls="news_3" role="tab" data-toggle="tab" data-title="微金所頭條">
+                  <i class="icon-news03"></i>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#news_4" aria-controls="news_4" role="tab" data-toggle="tab" data-title="行業資訊">
+                  <i class="icon-news04"></i>
+                </a>
+              </li>
+            </ul>
+            <i class="line hidden-sm hidden-xs"></i>
+          </div>
+          <div class="col-sm-7">
+            <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="news_1">
+              <ul>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_2">
+              <ul>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_3">
+              <ul>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_4">
+              <ul>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- /新闻列表 -->
     <!-- 合作伙伴 -->
-    <section></section>
+    <section id="hzhb"class="hidden-sm hidden-xs">
+      <div class="container">
+        <h3 class="text-center">合作伙伴</h3>
+        <div class="text-center">
+            <ul class="partner-list">
+              <li>
+                <a class="icon-uniE930" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE92F" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE92E" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE92A" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE929" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE931" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE92C" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE92B" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+              <li>
+                <a class="icon-uniE92D" href="http://www.chinapay.com/" target="_blank"></a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </section>
     <!-- /合作伙伴 -->
     <!-- 脚注区域 -->
     <footer></footer>
     <!-- /脚注区域 -->
-
+    <!-- Modal -->
+    <div class="modal fade" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">欢迎登录</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--<div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>-->
+        </div>
+      </div>
+    </div>
     <script src="lib/jquery/jquery.js "></script>
     <script src="lib/bootstrap/js/bootstrap.js "></script>
     <script src="js/main.js "></script>
